@@ -87,7 +87,7 @@ scp C:\Users\kleva\Downloads\telefonkatalog_med_database.py kim@10.2.4.62: # Thi
 
 ```sh
 # First download it from my repo
-git clone https://github.com/kimrobbin/Server-PI-setup- 
+git clone https://github.com/kimrobbin/Server-PI-setup- # You get my whole tutorial and the file 
 # Then run this command to transfer the file (You need to change the path and ip to your own, this is just my path, pc_name and ip)
 scp C:\Users\kleva\Downloads\telefonkatalog_med_database.py kim@10.2.4.62:
 
