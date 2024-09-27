@@ -78,5 +78,23 @@ FLUSH PRIVILEGES;
 ```sh
 # Use scp path and pc_name@ip
 scp C:\Users\kleva\Downloads\telefonkatalog_med_database.py kim@10.2.4.62: # This is an example of a scp command 
+ 
+```
+
+## How to download "Telefonkatalog" and how to use it 
+
+```sh
+# First download it form teams
+# Then run this comman to transfer the file (You need to change the path and ip to your own, this is just my path and pc_name and ip)
+scp C:\Users\kleva\Downloads\telefonkatalog_med_database.py kim@10.2.4.62:
+
+# Now ssh/log inn on your ubuntu computer and move the file into a folder and the place you want 
+mkdir Telefon # This makes a folder named Telefon
+
+mv telefonkatalog_med_database.py Telefon # This moves the program into a folder.
+
+# Use the mv command again to move the folder to your desired place 
+
+# To run the file go into the folder ( use cd to navigate) and write python3 telefonkatalog_med_database.py
 
 ```
