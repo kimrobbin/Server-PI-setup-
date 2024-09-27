@@ -40,12 +40,21 @@ ssh-keygen
 C:\Users\kleva\.ssh\id_rsa.pub   # This is a exempel on how the path looks like. 
 
 # After finding your path go in to terminal again and write "scp path pc_name@IP:"
-scp C:\Users\kleva\.ssh\id_rsa.pub pcNavn@IP:
+scp C:\Users\kleva\.ssh\id_rsa.pub pc Navn@IP:
 
-
+# Moving the key to authorized keys so you can go log inn without password 
+cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
 
 ```
+# Setup for stastic ip
 
+```sh
+# To open the ip UI
+nmtui
+
+# Move into edit connection and choose either wifi or lan.
+# Now go into IVe4 and change the adress and remember to change from automatic to manual
+```
 
 
 
@@ -62,5 +71,12 @@ GRANT ALL PRIVILEGES ON *.* TO 'username'@’localhost’ IDENTIFIED BY 'passwor
 
 -- Gives your accout the privliges 
 FLUSH PRIVILEGES;
+
+```
+
+# Getting files on another Computer
+```sh
+# Use scp path and pc_name@ip
+scp C:\Users\kleva\Downloads\telefonkatalog_med_database.py kim@10.2.4.62: # This is an example of a scp command 
 
 ```
