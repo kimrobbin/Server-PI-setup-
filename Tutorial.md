@@ -102,3 +102,25 @@ mv telefonkatalog_med_database.py Telefon # This moves the program into a folder
 python3 telefonkatalog_med_database.py
 
 ```
+
+```
+How to make mariadb compatible with PHP
+https://ubuntu.com/server/docs/how-to-install-and-configure-php
+
+PHP-CLI
+You can run PHP scripts via the Command Line Interface (CLI). To do this, you must first install the php-cli package. You can install it by running the following command:
+
+sudo apt install php-cli
+PHP-CGI
+You can also execute PHP scripts without installing the Apache PHP module. To accomplish this, you should install the php-cgi package via this command:
+
+sudo apt install php-cgi
+PHP-MySQL
+To use MySQL with PHP you should install the php-mysql package, like so:
+
+sudo apt install php-mysql
+PHP-PgSQL
+Similarly, to use PostgreSQL with PHP you should install the php-pgsql package:
+
+sudo apt install php-pgsql
+```
