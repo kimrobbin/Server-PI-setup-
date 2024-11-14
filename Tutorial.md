@@ -74,6 +74,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'username'@’localhost’ IDENTIFIED BY 'passwor
 -- Gives your accout the privleges 
 FLUSH PRIVILEGES;
 
+
+-- Admin user
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+
 ```
 
 # Getting files on another Computer
