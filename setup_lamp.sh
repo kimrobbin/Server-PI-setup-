@@ -24,18 +24,6 @@ sudo apt install php php-cli php-mysql php-curl php-gd php-mbstring php-xml php-
 echo "Restarting Apache..."
 sudo systemctl restart apache2
 
-# Install MariaDB Server
-echo "Installing MariaDB..."
-sudo apt install mariadb-server -y
-
-# Enable and start MariaDB service
-echo "Enabling and starting MariaDB..."
-sudo systemctl enable mariadb
-sudo systemctl start mariadb
-
-# Secure MariaDB installation
-echo "Securing MariaDB..."
-sudo mysql_secure_installation
 
 # Allow HTTP and HTTPS through the firewall
 echo "Configuring firewall..."
@@ -46,5 +34,4 @@ echo "Checking service statuses..."
 sudo systemctl status apache2 --no-pager
 sudo systemctl status mariadb --no-pager
 
-echo "LAMP stack installation complete!"
-echo "You can now host PHP websites and use MariaDB for databases."
+
